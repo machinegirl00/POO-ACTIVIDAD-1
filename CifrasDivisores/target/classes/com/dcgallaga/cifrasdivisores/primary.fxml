@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dcgallaga.cifrasdivisores.PrimaryController">
+   <children>
+      <Label layoutX="67.0" layoutY="350.0" text="Cifra menor" />
+      <Label layoutX="67.0" layoutY="315.0" text="Cifra mayor " />
+      <Label layoutX="67.0" layoutY="271.0" text="Suma total de cifras" />
+      <Label layoutX="67.0" layoutY="232.0" text="Suma de cifras pares" />
+      <Label layoutX="67.0" layoutY="191.0" text="Suma de cifras impares" />
+      <Label layoutX="67.0" layoutY="146.0" text="Cantidad de cifras" />
+      <Label layoutX="52.0" layoutY="73.0" text="Ingrese un numero" />
+      <TextField fx:id="txtNumero" layoutX="213.0" layoutY="69.0" />
+      <TextField fx:id="txtCifras" layoutX="213.0" layoutY="142.0" />
+      <TextField fx:id="txtImpar" layoutX="213.0" layoutY="187.0" />
+      <TextField fx:id="txtPar" layoutX="213.0" layoutY="228.0" />
+      <TextField fx:id="txtTotal" layoutX="213.0" layoutY="267.0" />
+      <TextField fx:id="txtCmayor" layoutX="213.0" layoutY="311.0" />
+      <TextField fx:id="txtCmenor" layoutX="213.0" layoutY="354.0" />
+      <Button layoutX="402.0" layoutY="69.0" mnemonicParsing="false" onAction="#analizar" text="Analizar" />
+      <Button layoutX="488.0" layoutY="69.0" mnemonicParsing="false" onAction="#limpiar" text="Limpiar" />
+      <Label layoutX="402.0" layoutY="146.0" text="Divisores" />
+      <ScrollPane layoutX="398.0" layoutY="178.0">
+         <content>
+            <Label fx:id="lblDivisores" prefHeight="185.0" prefWidth="179.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
